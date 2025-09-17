@@ -6,9 +6,9 @@
 ```markdown
 # 🏥 Patient Billing System
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  
-[![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://www.php.net/)  
-[![MySQL](https://img.shields.io/badge/Database-MySQL-green.svg)](https://www.mysql.com/)
+[![License: MIT] https://img.shields.io/badge/License-MIT-blue.svg ](LICENSE)  
+[![PHP Version] https://img.shields.io/badge/PHP-7.4%2B-blue.svg ] ( https://www.php.net/ )  
+[![MySQL] https://img.shields.io/badge/Database-MySQL-green.svg ]( https://www.mysql.com/ )
 
 A robust, secure, and user-friendly **Patient Billing System** built with PHP and MySQL to streamline patient management, billing, and invoicing for healthcare providers.
 
