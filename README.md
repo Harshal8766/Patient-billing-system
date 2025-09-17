@@ -32,8 +32,6 @@ Designed for healthcare providers who want efficiency and simplicity in one plac
 
 ## 📋 Requirements
 
-Before installation, make sure you have:
-
 - PHP 7.4+ with extensions: `mysqli`, `pdo_mysql`  
 - MySQL or MariaDB  
 - Apache or Nginx web server  
@@ -43,9 +41,10 @@ Before installation, make sure you have:
 
 ## ⚙️ Installation
 
-1️⃣ **Clone Repository**
+### 1️⃣ Clone Repository
 ```bash
 git clone https://github.com/your-username/patient-billing-system.git
+
 cd patient-billing-system
 
 2️⃣ Setup Database
@@ -68,11 +67,12 @@ define('DB_PASS', 'your_password');
 4️⃣ Set Permissions
 
 chmod 644 *.php
+
 chmod 755 .
 
 5️⃣ Run Application
-Place project inside your web server root (/var/www/html/)
-Then visit in browser:
+
+Place project inside your web server root (/var/www/html/), then open in browser:
 
 http://localhost/patient-billing-system/
 
@@ -134,18 +134,21 @@ Contributions are welcome 🎉
 
 2. Create a feature branch:
 
-git checkout -b feature/your-feature
 
+
+git checkout -b feature/your-feature
 
 3. Commit changes:
 
-git commit -m "Add new feature"
 
+
+git commit -m "Add new feature"
 
 4. Push branch:
 
-git push origin feature/your-feature
 
+
+git push origin feature/your-feature
 
 5. Open a Pull Request
 
