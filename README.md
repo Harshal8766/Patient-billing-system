@@ -1,184 +1,168 @@
-# Patient-billing-system
-
-
----
-
-```markdown
 # 🏥 Patient Billing System
-
-# Test Badge
-
-![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)
 
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/Database-MySQL-green.svg)](https://www.mysql.com/)
 
-A robust, secure, and user-friendly **Patient Billing System** built with PHP and MySQL to streamline patient management, billing, and invoicing for healthcare providers.
+A **robust, secure, and user-friendly** system built with **PHP & MySQL** to streamline hospital **patient management, billing, and invoicing**.  
+Designed for healthcare providers who want efficiency and simplicity in one place.
 
 ---
 
-## 🚀 Features
+## ✨ Key Features
 
-| Feature                     | Description                                      |
-|-----------------------------|------------------------------------------------|
-| Patient Management          | Add, view, and update patient records           |
-| Billing & Invoicing         | Create, manage, and print patient bills         |
-| User Authentication        | Secure login/logout and session management       |
-| Dashboard Overview         | Quick insights into patients, bills, and feedback |
-| Feedback System            | Collect and manage patient feedback              |
-| Modular Codebase           | Easy to maintain and extend                       |
+- 👨‍⚕️ **Patient Management** – Add, view, and update patient records  
+- 💳 **Billing & Invoicing** – Create, manage, and print patient bills  
+- 🔑 **User Authentication** – Secure login/logout and session management  
+- 📊 **Dashboard Overview** – Quick insights into patients, bills, and feedback  
+- 📝 **Feedback System** – Collect and manage patient feedback  
+- ⚡ **Modular Codebase** – Easy to maintain and extend  
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
-| Technology      | Version / Details                  |
-|-----------------|----------------------------------|
-| PHP             | 7.4 or higher                    |
-| Database        | MySQL / MariaDB                  |
-| Web Server      | Apache / Nginx                   |
-| Frontend        | HTML5, CSS3, JavaScript (optional) |
-
----
-
-## 📋 Prerequisites
-
-- PHP 7.4+ with extensions: `mysqli`, `pdo_mysql`
-- MySQL or MariaDB database server
-- Web server (Apache or Nginx)
-- Git (for cloning repository)
+| Layer       | Technology             |
+|-------------|------------------------|
+| Backend     | PHP 7.4+               |
+| Database    | MySQL / MariaDB        |
+| Web Server  | Apache / Nginx         |
+| Frontend    | HTML5, CSS3, JavaScript|
 
 ---
 
-## ⚙️ Installation Guide
+## 📋 Requirements
 
-### 1. Clone the Repository
+Before installation, make sure you have:
 
+- PHP 7.4+ with extensions: `mysqli`, `pdo_mysql`  
+- MySQL or MariaDB  
+- Apache or Nginx web server  
+- Git (optional, for cloning repo)  
+
+---
+
+## ⚙️ Installation
+
+1️⃣ **Clone Repository**
 ```bash
 git clone https://github.com/your-username/patient-billing-system.git
 cd patient-billing-system
-```
 
-### 2. Setup Database
+2️⃣ Setup Database
 
-- Create a new database:
-
-```sql
 CREATE DATABASE patient_billing;
-```
 
-- Import the schema and seed data:
-
-```bash
 mysql -u your_username -p patient_billing < db_Setup.sql
-```
 
-### 3. Configure Application
+3️⃣ Configure Application
 
-- Copy example config:
-
-```bash
 cp config.example.php config.php
-```
 
-- Edit `config.php` with your database credentials:
+Edit config.php:
 
-```php
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'patient_billing');
 define('DB_USER', 'your_username');
 define('DB_PASS', 'your_password');
-```
 
-### 4. Set Permissions
+4️⃣ Set Permissions
 
-```bash
 chmod 644 *.php
 chmod 755 .
-```
 
-### 5. Deploy & Access
+5️⃣ Run Application
+Place project inside your web server root (/var/www/html/)
+Then visit in browser:
 
-- Place the project folder in your web server root (e.g., `/var/www/html/`).
-- Access via browser:
-
-```
 http://localhost/patient-billing-system/
-```
+
 
 ---
 
-## 🗂️ Project Structure
+🗂️ Project Structure
 
-```
 patient-billing-system/
-├── db_Setup.sql          # Database schema and initial data
-├── config.example.php    # Sample config file (copy to config.php)
-├── index.php             # Login / landing page
+├── db_Setup.sql          # Database schema
+├── config.example.php    # Sample config file
+├── index.php             # Login page
 ├── dashboard.php         # Dashboard overview
 ├── view_patients.php     # Patient management
 ├── create_bill.php       # Bill creation
 ├── billing.php           # Billing overview
 ├── print_invoice.php     # Invoice printing
-├── feedback.php          # Feedback form and management
+├── feedback.php          # Feedback system
 ├── logout.php            # Logout script
 ├── .gitignore            # Git ignore rules
-├── README.md             # Project documentation
-└── LICENSE               # License file
-```
+└── README.md             # Documentation
+
 
 ---
 
-## 🔐 Security Best Practices
+🔐 Security Notes
 
-- **Never commit `config.php` with real credentials.**
-- Use HTTPS in production environments.
-- Sanitize and validate all user inputs.
-- Keep PHP and dependencies up to date.
-- Use strong passwords and consider multi-factor authentication.
+❌ Never commit config.php with real credentials
 
----
+🔒 Always use HTTPS in production
 
-## 🛠️ Troubleshooting
+🛡️ Validate & sanitize all inputs
 
-| Issue                      | Solution                                         |
-|----------------------------|-------------------------------------------------|
-| Database connection errors  | Verify credentials in `config.php` and DB status |
-| Permission denied errors    | Check file/folder permissions for web server user |
-| Blank pages or PHP errors   | Enable error reporting in `config.php` for debug |
-| Session issues             | Ensure PHP session directory is writable         |
+⬆️ Keep PHP & dependencies updated
+
+
 
 ---
 
-## 🤝 Contributing
+🛠️ Troubleshooting
 
-Contributions are welcome! Please follow these steps:
+Issue	Solution
 
-1. Fork the repository  
-2. Create a feature branch (`git checkout -b feature/your-feature`)  
-3. Commit your changes (`git commit -m 'Add feature'`)  
-4. Push to the branch (`git push origin feature/your-feature`)  
-5. Open a Pull Request describing your changes  
+Database connection error	Check DB credentials in config.php
+Permission denied	Verify file/folder permissions
+Blank pages	Enable PHP error reporting for debugging
+Session issues	Ensure PHP session directory is writable
 
-Please ensure code quality and add meaningful comments.
 
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 📞 Contact
+🤝 Contributing
 
-**Harshal**  
-Email: harshalbhangare88@gmail.com 
-GitHub: https://github.com/Harshal8766
+Contributions are welcome 🎉
+
+1. Fork the repo
+
+
+2. Create a feature branch:
+
+git checkout -b feature/your-feature
+
+
+3. Commit changes:
+
+git commit -m "Add new feature"
+
+
+4. Push branch:
+
+git push origin feature/your-feature
+
+
+5. Open a Pull Request
+
+
+
 
 ---
 
-*Thank you for using the Patient Billing System!*
-```
+📬 Contact
+
+👤 Harshal Bhangare
+📧 Email: harshalbhangare88@gmail.com
+💻 GitHub: Harshal8766
+
+
+---
+
+⭐ If you found this project useful, don’t forget to star the repo! ⭐
 
 ---
