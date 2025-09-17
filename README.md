@@ -6,6 +6,10 @@
 ```markdown
 # 🏥 Patient Billing System
 
+# Test Badge
+
+![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)
+
 [![PHP Version](https://img.shields.io/badge/PHP-7.4%2B-blue.svg)](https://www.php.net/)
 [![MySQL](https://img.shields.io/badge/Database-MySQL-green.svg)](https://www.mysql.com/)
 
