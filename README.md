@@ -112,16 +112,14 @@ patient-billing-system/
 
 ---
 
-🛠️ Troubleshooting
+## 🛠️ Troubleshooting
 
-Issue	Solution
-
-Database connection error	Check DB credentials in config.php
-Permission denied	Verify file/folder permissions
-Blank pages	Enable PHP error reporting for debugging
-Session issues	Ensure PHP session directory is writable
-
-
+| Issue                      | Solution                                         |
+|----------------------------|-------------------------------------------------|
+| Database connection errors  | Verify credentials in `config.php` and DB status |
+| Permission denied errors    | Check file/folder permissions for web server user |
+| Blank pages or PHP errors   | Enable error reporting in `config.php` for debug |
+| Session issues             | Ensure PHP session directory is writable         |
 
 ---
 
