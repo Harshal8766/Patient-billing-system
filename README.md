@@ -158,7 +158,6 @@ git push origin feature/your-feature
 📬 Contact
 
 👤 Harshal Bhangare
-📧 Email: harshalbhangare88@gmail.com
 💻 GitHub: Harshal8766
 
 
